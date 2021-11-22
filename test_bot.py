@@ -185,7 +185,7 @@ def login(email, passwrd, browser):
     btn.click()
 
 def execute_script(email, pswrd, uname, share_state):
-    browser = webdriver.Chrome(executable_path="c:\Python\SeleniumModule\chromedriver.exe")
+    browser = webdriver.Chrome(executable_path=SYSTEM_PATH+'chromedriver.exe')
     login(email, pswrd, browser)
     time.sleep(
         3)  # this is the time interval after the login button press to make sure the login process is complete before opening the post links
@@ -195,6 +195,7 @@ if __name__ == '__main__':
     email = 'eyal_360@hotmail.com'  # enter your email
     pswrd = '3fy9fcnZ'  # enter password
     uname = 'Eyal Huri'  # enter your username
+    SYSTEM_PATH = 'קבצי מערכת - לא לגעת/'
 
     cycle = 0
 
