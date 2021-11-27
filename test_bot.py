@@ -93,9 +93,9 @@ def execute_script(email, pswrd, uname, share_state):
     open_posts(uname, browser, share_state)
 
 if __name__ == '__main__':
-    email = 'eyal_360@hotmail.com'  # enter your email
-    pswrd = '3fy9fcnZ'  # enter password
-    uname = 'Eyal Huri'  # enter your username
+    email = ''  # enter your email
+    pswrd =  '' # enter password
+    uname =  '' # enter your username
     SYSTEM_PATH = 'קבצי מערכת - לא לגעת/'
 
     cycle = 0
