@@ -98,7 +98,7 @@ def get_user_cred():
     platform = 'system'
     db_connect = sqlite3.connect(DB)
     cursor = db_connect.cursor()
-    cursor.execute("SELECT *,oid FROM users WHERE platform=:platform",
+    cursor.execute("SELECT * FROM users WHERE platform=:platform",
                    {'platform': platform
                     })
     cred = cursor.fetchone()
