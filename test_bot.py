@@ -109,9 +109,8 @@ def get_user_cred():
     return cred
 
 if __name__ == '__main__':
-    global SYSTEM_PATH
-    email, pswrd, uname = get_user_cred()
     SYSTEM_PATH = 'קבצי מערכת - לא לגעת/'
+    email, pswrd, uname = get_user_cred()
 
     cycle = 0
 
