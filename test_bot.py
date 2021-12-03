@@ -127,5 +127,5 @@ if __name__ == '__main__':
         cycle += 1
         #        print('Something went wrong(check internet connection)')
         print('Finished ' + str(cycle) + ' cycle')
-        print(f'New cycle starts in {cycle_time/60} min)
+        print(f'New cycle starts in {cycle_time/60} min')
         time.sleep(cycle_time)  # time interval after each cycle
