@@ -111,7 +111,8 @@ def get_user_cred():
 if __name__ == '__main__':
     SYSTEM_PATH = 'קבצי מערכת - לא לגעת/'
     plat, uname, email, pswrd = get_user_cred()
-
+    
+    cycle_time = 3600 * 1   ## 3,600 seconds == 1 hour
     cycle = 0
 
     while True:  # this has to remain true to create an infinite loop of cycles
@@ -126,4 +127,5 @@ if __name__ == '__main__':
         cycle += 1
         #        print('Something went wrong(check internet connection)')
         print('Finished ' + str(cycle) + ' cycle')
-        time.sleep(3600 * 5)  # time interval after each cycle
+        print(f'New cycle starts in {cycle_time/60} min)
+        time.sleep(cycle_time)  # time interval after each cycle
